@@ -14,9 +14,10 @@ The Liskov Substitution Principle states that objects of a superclass should be 
 
 In our project, we adhere to LSP by ensuring that subclasses can be used interchangeably with their base classes:
 
-Pet: Represents a basic pet with name and species.
-PetWithMedicalHistory: Extends Pet to add medical history functionality.
-Bird: Subclass of Pet, representing a bird with additional functionality (violating LSP in the example provided).
+- Pet: Represents a basic pet with name and species.
+- PetWithMedicalHistory: Extends Pet to add medical history functionality.
+- Bird: Subclass of Pet, representing a bird with additional functionality (violating LSP in the example provided).
+
 By using polymorphism, methods in the VetDatabase class work with instances of both Pet and PetWithMedicalHistory, allowing for flexibility and ease of extension without affecting the behavior of the program. However, the provided example of Bird violates LSP by adding a method (fly()) specific to birds, which may not be applicable to all pets.
 
 # Open/Closed Principle (OCP)
